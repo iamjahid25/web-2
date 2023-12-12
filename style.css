@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.firstSec{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./img/money.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.firstSec h1 span{
+    color: #E2B727;
+}
+.firstSec h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+.firstSec h4 {
+
+    font-weight: 500;
+}
+.firstSec p{
+    padding: 25px 0;
+}
+
+.firstBtn{
+    height: auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 5px;
+    text-align: center;
+    color: #000;
+    background-color: #E2B727;
+    margin: 0 auto;
+}
+.firstMain{
+    margin-bottom: 30px;
+}
+.firstMain img{
+    width: 30%;
+}
+
+/* countdown */
+#countdown {
+    width: 465px;
+    max-width: 95%;
+    height: 135px;
+    text-align: center;
+    background: #E2B727;
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+    margin: auto;
+    padding: 24px 0;
+    position: absolute;
+    /* top: 0; */
+    /* bottom: 0; */
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+}
+
+
+#countdown #tiles{
+	position: relative;
+	z-index: 1;
+}
+
+#countdown #tiles > span{
+	width: 92px;
+	max-width: 100%;
+	font: bold 32px 'Droid Sans', Arial, sans-serif;
+	text-align: center;
+	color: #111;
+	background-color: #ddd;
+	border-top: 1px solid #fff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+	margin: 0 7px;
+	padding: 18px 0;
+	display: inline-block;
+	position: relative;
+}
+
+
+#countdown #tiles > span:after{
+	content:"";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	border-top: 1px solid #333;
+	display: block;
+	position: absolute;
+	top: 48%; left: 0;
+}
+
+#countdown .labels{
+	/* width: 100%; */
+	height: 25px;
+	/* text-align: center;
+	position: absolute; */
+	bottom: 8px;
+    z-index: 999;
+    /* padding-top: 10px; */
+}
+
+#countdown .labels li{
+	width: 102px;
+	font: bold 15px 'Droid Sans', Arial, sans-serif;
+	color: #1B1816;
+    font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+}
+/* countdown */
+
+/* second section here  */
+.secondSec{
+    height: auto;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1B1816;
+}
+
+.secondSec h2{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.secondSec h2 span{
+    color: #E2B727;
+}
+
+.featureBox{
+    height: 300px;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: #E2B727;
+    color: #1B1816;
+    border-radius: 5px ;
+    text-align: center;
+    box-shadow: rgb(255 255 255) 1.95px 1.95px 2.6px;
+}
+.featureBox img{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.featureBox h4{
+    padding: 10px 0;
+}
+
+.featureBox p{
+    font-size: 14px;
+}
+
+.secondSec .firstBtn {
+    margin-top: 30px;
+}
+
+/* third section  */
+.thirdSec{
+    height: auto;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #E2B727;
+    color: #1B1816;
+}
+
+.thirdSec h2{
+    font-size: 40px;
+    text-align: center;
+    color: #1B1816;
+    margin-bottom: 50px;
+}
+.thirdSec h2 span{
+    color: #fff;
+}
+
+.testimonialBox{
+    height: 250px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px 15px;
+    background-color: #1B1816;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonialBox img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -90px;
+    border: 2px solid #fff;
+}
+
+.testimonialBox h4{
+    margin: 15px 0;
+    font-size: 20px;
+}
+.testimonialBox p{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.testimonialBox i{
+    font-size: 40px;
+    color: #E2B727;
+}
+
+.star i{
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.thirdSec .firstBtn{
+    background-color: #1B1816;
+    color: #E2B727;
+    width: 400px;
+    max-width: 100%;
+}
+
+/* slider here  */
+.mySwiper{
+    margin: 50px 0;
+}
+.imgSec img{
+    width: 100%;
+    border-radius: 5px;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    font-size: 12px !important;
+    background: #1B1816;
+    padding: 15px;
+    color: #E2B727;
+    border-radius: 50px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    font-size: 12px !important;
+    background: #1B1816;
+    padding: 15px;
+    color: #E2B727;
+    border-radius: 50px;
+}
+/* fourth section here  */
+.fourthSec{
+    height: auto;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1B1816;
+    color: #fff;
+}
+
+.fourthSec h2{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.fourthSec h2 span{
+    color: #E2B727;
+}
+
+.formInner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+}
+.formInner input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.formInner .sendBtn{
+    height: auto;
+    width: 150px;
+    background-color: #E2B727;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+/* fifth section here  */
+.fifthSec{
+    height: auto;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1B1816;
+    color: #fff;
+}
+.fifthSec h2{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.fifthSec h2 span{
+    color: #E2B727;
+}
+.fifthSec .row{
+    align-items: center !important;
+}
+.fifthSec .firstBtn{
+    margin: 0;
+}
+.fifthSec p{
+    padding: 25px 0;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #1b1816e8;
+    color: #fff;
+    padding: 7px 0;
+}
+
+.phone{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+
+@media screen and (max-width:767px) {
+    .phone{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .firstMain {
+        margin-top: -200px;
+    }
+
+    .firstSec{
+        justify-content: center;
+    }
+
+    .fifthSec{
+        justify-content: center;
+    }
+    .featureBox{
+        margin-top: 40px;
+    }
+    .testimonialBox{
+        margin-top: 80px;
+    }
+    #countdown #tiles > span{
+        width: 60px;
+        max-width: 100%;
+    }
+    #countdown .labels li{
+        width: 70px;
+    }
+}
